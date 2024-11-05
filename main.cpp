@@ -18,7 +18,7 @@ int afficherMenu(int a)
     int choix;
     cout << "-------------Menu-------------" << endl;
     cout << "1-Ajouter un nouveau produit" << endl;
-    cout << "2-Modifier la quantit� disponible d'un produit" << endl;
+    cout << "2-Modifier la quantite disponible d'un produit" << endl;
     cout << "3-Ajouter ou supprimer un client" << endl;
     cout << "4-Acheter une carte de fidelite" << endl;
     cout << "5-Acheter des produits" << endl;
@@ -42,13 +42,13 @@ int choix(vector<Produit>& catalogue, int& nbProduits) {
     }
     case 2: {
         int numeroProduit;
-        cout << "Entrez le num�ro du produit � modifier : ";
+        cout << "Entrez le numero du produit a modifier : ";
         cin >> numeroProduit;
         gerant.modifierQuantiteProduit(catalogue, numeroProduit);
         break;
     }
     case 3: {
-        cout << "Fonctionnalit� d'ajout ou suppression de client � impl�menter." << endl;
+        cout << "Fonctionnalite d'ajout ou suppression de client a implementer." << endl;
         break;
     }
     case 4: {
@@ -58,9 +58,9 @@ int choix(vector<Produit>& catalogue, int& nbProduits) {
     case 5: {
         int numeroProduit;
         double quantite;
-        cout << "Entrez le num�ro du produit � acheter : ";
+        cout << "Entrez le numero du produit a acheter : ";
         cin >> numeroProduit;
-        cout << "Entrez la quantit� : ";
+        cout << "Entrez la quantite : ";
         cin >> quantite;
         client.acheterProduit(catalogue, numeroProduit, quantite);
         break;

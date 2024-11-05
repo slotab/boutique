@@ -14,7 +14,7 @@ void Client::achatFid()
 void Client::acheterProduit(vector<Produit>& catalogue, int numeroProduit, double quantite)
 {
     if (catalogue[numeroProduit].getPrixVente() == 0)
-        cout << "Produit non trouv�." << endl;
+        cout << "Produit non trouve." << endl;
     else
     {
         double prix_total;

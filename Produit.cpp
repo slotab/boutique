@@ -61,9 +61,9 @@ void Produit::setQuantiteDisponible(double quantite_disponible)
 }
 
 void Produit::afficherProduit() const {
-	cout << "R�f�rence : " << reference 
-		<< "Nom commercial : " << nom_commercial 
-		<< "Prix d'achat : " << prix_achat 
-		<< "Prix de vente : " << prix_vente
-		<< "Quantit� disponible : " << quantite_disponible;
+	cout << "Reference : " << reference  << endl
+		<< "Nom commercial : " << nom_commercial << endl
+		<< "Prix d'achat : " << prix_achat  << endl
+		<< "Prix de vente : " << prix_vente  << endl
+		<< "Quantite disponible : " << quantite_disponible;
 }

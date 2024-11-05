@@ -9,23 +9,23 @@ int Gerant::ajouterProduit(vector<Produit>& catalogue, int nbProduits)
     double prixAchat, prixVente;
     int quantiteDisponible;
 
-    cout << "Donnez la r�f�rence du produit � ajouter : ";
+    cout << "Donnez la reference du produit a ajouter : ";
     cin >> reference;
     nouveauProduit.setReference(reference);
 
-    cout << "Donnez le nom du produit � ajouter : ";
+    cout << "Donnez le nom du produit a ajouter : ";
     cin >> nomCommercial;
     nouveauProduit.setNomCommercial(nomCommercial);
 
-    cout << "Donnez le prix d'achat du produit � ajouter : ";
+    cout << "Donnez le prix d'achat du produit a ajouter : ";
     cin >> prixAchat;
     nouveauProduit.setPrixAchat(prixAchat);
 
-    cout << "Donnez le prix de vente du produit � ajouter : ";
+    cout << "Donnez le prix de vente du produit a ajouter : ";
     cin >> prixVente;
     nouveauProduit.setPrixVente(prixVente);
 
-    cout << "Donnez la quantit� disponible du produit � ajouter : ";
+    cout << "Donnez la quantite disponible du produit a ajouter : ";
     cin >> quantiteDisponible;
     nouveauProduit.setQuantiteDisponible(quantiteDisponible);
 
@@ -48,7 +48,7 @@ void Gerant::consulterCatalogue(const vector<Produit>& catalogue, int nbProduits
 void Gerant::modifierQuantiteProduit(vector<Produit>& catalogue, int numeroProduit)
 {
     if (catalogue[numeroProduit].getPrixVente() == 0)
-    cout << "Produit non trouv�." << endl;
+        cout << "Produit non trouve." << endl;
     else
     {
         int nouvelleQuantite;
